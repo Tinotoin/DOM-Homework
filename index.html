@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video Game List App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+  </head>
+  <body>
+    <form id="new-game-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="game" class="primary">Game</label>
+          <input type="text" id="game" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="system" class="primary">System</label>
+          <select id="system">
+            <option value="" disabled selected></option>
+            <option value="playstation 4">Playstation 4</option>
+            <option value="xbox One">Xbox One</option>
+            <option value="nintendo switch">Nintendo Switch</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="progress" class="primary">Progress</label>
+          <select id="progress">
+            <option value="" disabled selected></option>
+            <option value="completed">Completed</option>
+            <option value="in progress">In Progress</option>
+            <option value="not started">Not Started</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <input type="radio"/>
+          <label for="recommend" class="primary">Recommended?</label>
+          <select id="recommend"
+          <input type="radio"/>
+        </div>
+      </div>
+      <input type="submit" value="Save to List"/>
+    </form>
+    <button id="delete-all">Delete All</button>
+
+    <h1>Video Game List</h1>
+    <ul id="video-game-list"></ul>
+  </body>
+  <script src="js/app.js"></script>
+</html>
