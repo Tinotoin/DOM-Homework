@@ -1,18 +1,31 @@
 body {
   font-family: Helvetica;
+  color: white
+
 }
 
+h1{text-shadow: 2px 2px #ff0000}
+
+h2{text-shadow: 2px 2px #ff0000}
+
+p{text-shadow: 2px 2px #ff0000}
+
+body {
+  background-image: url("../days_gone_BG.jpg");
+  background-color: inherit;
+  background-size: cover;
+}
 
 #form-wrapper{
 width: 100%;
 display: flex;
-/* flex-direction: row; */
+flex-direction: column;
 }
 
-/* #reading-list{
+#reading-list{
   display: flex;
-  flex-wrap: nowrap;
-} */
+  flex-wrap: wrap;
+}
 
 .reading-list-item{
   margin: 0.5rem 0.5rem;
@@ -22,10 +35,10 @@ display: flex;
   background: #deafff
 }
 
-/* .flex-container {
+.flex-container {
   display: flex;
   flex-direction: column;
-} */
+}
 
 ul{
 list-style-type: none

@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Video Game List App</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+
   </head>
+
   <body>
     <form id="new-game-form">
       <div id="form-wrapper">
@@ -33,15 +35,14 @@
           </select>
         </div>
         <div class="form-item">
-          <input type="radio"/>
-          <label for="recommend" class="primary">Recommended?</label>
-          <select id="recommend"
-          <input type="radio"/>
+        <label for"recommend" class="primary">Recommended?</label>
+            <input type="radio" name="recommend" id="yes">Yes</input>
+            <button onclick="uncheck()">Clear</button>
         </div>
-      </div>
-      <input type="submit" value="Save to List"/>
+        <input type="submit" value="Save to List"/>
+        <button id="delete-all">Delete All</button>
     </form>
-    <button id="delete-all">Delete All</button>
+
 
     <h1>Video Game List</h1>
     <ul id="video-game-list"></ul>
